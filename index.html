@@ -1,78 +1,68 @@
 <!DOCTYPE html>
-<html lang="so">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AZAL Solutions | Login & Services</title>
+    <title>AZAL Solutions | Strategic SaaS Partner</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
         .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        .glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
 
-    <!-- Navigation -->
     <nav class="fixed w-full z-50 glass border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="text-2xl font-extrabold tracking-tighter text-blue-600">
                 AZAL<span class="text-slate-800">SOLUTIONS</span>
             </div>
             <div class="hidden md:flex space-x-8 font-medium">
-                <a href="#services" class="hover:text-blue-600 transition">Adeegyada</a>
+                <a href="#services" class="hover:text-blue-600 transition">Services</a>
                 <a href="#" onclick="toggleModal('login')" class="hover:text-blue-600 transition">Sign In</a>
-                <a href="#" onclick="toggleModal('signup')" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-200">Sign Up</a>
+                <a href="#" onclick="toggleModal('signup')" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Get Started</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-6 gradient-bg text-white">
-        <div class="max-w-7xl mx-auto text-center">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">Scale Your Business <br><span class="text-blue-400 font-normal italic text-4xl md:text-6xl">With AZAL Solutions.</span></h1>
-            <p class="text-slate-300 text-lg mb-10 max-w-2xl mx-auto">Waxaan kaa caawineynaa inaan ganacsigaaga u samaynno nidaamyo casri ah oo SaaS ah iyo xeelado dhijitaal ah.</p>
+    <section class="pt-32 pb-20 px-6 gradient-bg text-white text-center">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6">Scale Your Business <br><span class="text-blue-400 font-normal italic text-4xl md:text-6xl">With AZAL Solutions.</span></h1>
+            <p class="text-slate-300 text-lg mb-10 max-w-2xl mx-auto">Empowering modern enterprises by implementing high-impact SaaS tools and digital strategies that drive growth.</p>
             <div class="flex flex-col md:flex-row justify-center gap-4">
-                <button onclick="toggleModal('signup')" class="bg-blue-600 px-8 py-4 rounded-xl font-bold hover:scale-105 transition">Bilow Hadda</button>
-                <a href="mailto:hooyoroodo10@gmail.com" class="bg-slate-800 border border-slate-700 px-8 py-4 rounded-xl font-bold hover:bg-slate-700 transition text-center">Contact Sales</a>
+                <button onclick="toggleModal('signup')" class="bg-blue-600 px-8 py-4 rounded-xl font-bold hover:scale-105 transition">Get Started Now</button>
+                <a href="mailto:hooyoroodo10@gmail.com" class="bg-slate-800 border border-slate-700 px-8 py-4 rounded-xl font-bold hover:bg-slate-700 transition text-center text-white">Contact Sales</a>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="py-24 px-6">
-        <div class="max-w-7xl mx-auto text-center mb-16">
-            <h2 class="text-3xl font-bold mb-4">Maxaan qabanaa?</h2>
-            <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
-        </div>
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div class="p-10 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition">
+            <div class="p-10 bg-white rounded-3xl border border-slate-100 shadow-sm">
                 <i class="fa-solid fa-rocket text-4xl text-blue-600 mb-6"></i>
                 <h3 class="text-xl font-bold mb-4">SaaS Implementation</h3>
-                <p class="text-slate-500">Waxaan kugu xireynaa shirkadaha software-ka ee ugu sareeya aduunka.</p>
+                <p class="text-slate-500 text-sm">We connect you with the world's leading software platforms.</p>
             </div>
-            <div class="p-10 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition">
+            <div class="p-10 bg-white rounded-3xl border border-slate-100 shadow-sm">
                 <i class="fa-solid fa-chart-line text-4xl text-blue-600 mb-6"></i>
                 <h3 class="text-xl font-bold mb-4">Digital Strategy</h3>
-                <p class="text-slate-500">Kordhi dakhligaaga adoo isticmaalaya xeelado dhijitaal ah oo casri ah.</p>
+                <p class="text-slate-500 text-sm">Maximize your revenue with expert digital growth strategies.</p>
             </div>
-            <div class="p-10 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition">
+            <div class="p-10 bg-white rounded-3xl border border-slate-100 shadow-sm">
                 <i class="fa-solid fa-shield-halved text-4xl text-blue-600 mb-6"></i>
                 <h3 class="text-xl font-bold mb-4">Security Consulting</h3>
-                <p class="text-slate-500">Nidaamkaaga iyo xogtaada ayaan ka dhigeynaa mid aan la jabin karin.</p>
+                <p class="text-slate-500 text-sm">Protecting your infrastructure with elite security research.</p>
             </div>
         </div>
     </section>
 
-    <!-- Modals (Sign In / Sign Up) -->
     <div id="modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm px-4">
         <div class="bg-white w-full max-w-md p-8 rounded-3xl relative shadow-2xl">
             <button onclick="toggleModal()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-xl"></i></button>
-            <div id="modal-content">
-                <!-- Content gets injected here -->
-            </div>
+            <div id="modal-content"></div>
         </div>
     </div>
 
@@ -80,31 +70,22 @@
         function toggleModal(type) {
             const modal = document.getElementById('modal');
             const content = document.getElementById('modal-content');
-            
-            if (!type) {
-                modal.classList.add('hidden');
-                return;
-            }
-
+            if (!type) { modal.classList.add('hidden'); return; }
             if (type === 'login') {
-                content.innerHTML = `
-                    <h2 class="text-2xl font-bold mb-6">Sign In</h2>
-                    <input type="email" placeholder="Email Address" class="w-full p-4 mb-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
-                    <input type="password" placeholder="Password" class="w-full p-4 mb-6 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
-                    <button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition">Guji si aad u gasho</button>
-                `;
+                content.innerHTML = `<h2 class="text-2xl font-bold mb-6">Sign In</h2>
+                    <input type="email" placeholder="Email Address" class="w-full p-4 mb-4 border rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="password" placeholder="Password" class="w-full p-4 mb-6 border rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
+                    <button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold">Login</button>`;
             } else {
-                content.innerHTML = `
-                    <h2 class="text-2xl font-bold mb-6">Create Account</h2>
-                    <input type="text" placeholder="Full Name" class="w-full p-4 mb-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
-                    <input type="email" placeholder="Email Address" class="w-full p-4 mb-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
-                    <input type="password" placeholder="Password" class="w-full p-4 mb-6 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
-                    <button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition">Diiwaangeli</button>
-                `;
+                content.innerHTML = `<h2 class="text-2xl font-bold mb-6">Create Account</h2>
+                    <input type="text" placeholder="Full Name" class="w-full p-4 mb-4 border rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="email" placeholder="Email Address" class="w-full p-4 mb-4 border rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="password" placeholder="Password" class="w-full p-4 mb-6 border rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
+                    <button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold">Register</button>`;
             }
             modal.classList.remove('hidden');
         }
     </script>
-
 </body>
 </html>
+
