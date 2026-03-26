@@ -3,118 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AZAL Solutions - Premium SaaS Partner & Business Digitalization Experts">
-    <title>AZAL Solutions | Strategic SaaS Partner</title>
+    <title>AZAL Solutions | Login & Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        .bg-navy { background-color: #0f172a; }
-        .text-azure { color: #3b82f6; }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
     </style>
 </head>
-<body class="bg-white text-slate-900">
+<body class="bg-slate-50 text-slate-900">
 
     <!-- Navigation -->
-    <nav class="border-b border-slate-100 sticky top-0 bg-white/90 backdrop-blur-md z-50">
+    <nav class="fixed w-full z-50 glass border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold tracking-tighter text-navy flex items-center">
-                <i class="fa-solid fa-cube text-azure mr-2"></i>AZAL<span class="text-azure">SOLUTIONS</span>
+            <div class="text-2xl font-extrabold tracking-tighter text-blue-600">
+                AZAL<span class="text-slate-800">SOLUTIONS</span>
             </div>
-            <div class="hidden md:flex space-x-8 font-medium text-slate-600">
-                <a href="#about" class="hover:text-azure transition">About</a>
-                <a href="#services" class="hover:text-azure transition">Solutions</a>
-                <a href="#partner" class="hover:text-azure transition">Partner</a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#services" class="hover:text-blue-600 transition">Adeegyada</a>
+                <a href="#" onclick="toggleModal('login')" class="hover:text-blue-600 transition">Sign In</a>
+                <a href="#" onclick="toggleModal('signup')" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-200">Sign Up</a>
             </div>
-            <a href="mailto:mohamedgedi24@gmail.com" class="bg-navy text-white px-6 py-2.5 rounded-full font-semibold hover:bg-slate-800 transition shadow-lg shadow-blue-900/20 text-sm">Contact Sales</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-navy py-24 px-6 relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-1/3 h-full bg-blue-600/10 blur-[120px] rounded-full"></div>
-        <div class="max-w-7xl mx-auto text-center relative z-10">
-            <span class="inline-block py-1 px-3 rounded-full bg-blue-500/10 text-azure text-xs font-bold tracking-widest uppercase mb-6 border border-blue-500/20">Authorized SaaS Consultant</span>
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-8 tracking-tight">Scale Your Business with <br><span class="text-azure italic">Next-Gen Software.</span></h1>
-            <p class="text-slate-400 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
-                AZAL Solutions empowers modern enterprises by implementing high-impact SaaS tools and digital strategies that drive sustainable growth and operational excellence.
-            </p>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-4">
-                <a href="#services" class="bg-azure text-white px-10 py-4 rounded-xl font-bold hover:scale-105 transition shadow-xl shadow-blue-500/30 w-full md:w-auto">View Solutions</a>
-                <a href="https://wa.me/123456789" class="bg-slate-800 text-slate-200 px-10 py-4 rounded-xl font-bold hover:bg-slate-700 transition w-full md:w-auto">Book a Consultation</a>
+    <section class="pt-32 pb-20 px-6 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">Scale Your Business <br><span class="text-blue-400 font-normal italic text-4xl md:text-6xl">With AZAL Solutions.</span></h1>
+            <p class="text-slate-300 text-lg mb-10 max-w-2xl mx-auto">Waxaan kaa caawineynaa inaan ganacsigaaga u samaynno nidaamyo casri ah oo SaaS ah iyo xeelado dhijitaal ah.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <button onclick="toggleModal('signup')" class="bg-blue-600 px-8 py-4 rounded-xl font-bold hover:scale-105 transition">Bilow Hadda</button>
+                <a href="mailto:hooyoroodo10@gmail.com" class="bg-slate-800 border border-slate-700 px-8 py-4 rounded-xl font-bold hover:bg-slate-700 transition text-center">Contact Sales</a>
             </div>
         </div>
     </section>
 
-    <!-- Trusted By / SaaS Partners -->
-    <section id="partner" class="py-12 border-b border-slate-50 text-center bg-slate-50/50">
-        <p class="text-slate-400 text-xs font-bold uppercase tracking-widest mb-6">Partnering with Global SaaS Leaders</p>
-        <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-40 grayscale">
-            <i class="fa-brands fa-microsoft text-4xl"></i>
-            <i class="fa-brands fa-google text-4xl"></i>
-            <i class="fa-brands fa-aws text-4xl"></i>
-            <i class="fa-brands fa-slack text-4xl"></i>
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Maxaan qabanaa?</h2>
+            <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
         </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Enterprise-Grade Solutions</h2>
-            <div class="w-20 h-1.5 bg-azure mx-auto rounded-full"></div>
-        </div>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="p-8 rounded-3xl border border-slate-100 bg-white hover:border-azure/30 hover:shadow-2xl transition group">
-                <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-azure group-hover:text-white transition">
-                    <i class="fa-solid fa-rocket text-2xl"></i>
-                </div>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="p-10 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition">
+                <i class="fa-solid fa-rocket text-4xl text-blue-600 mb-6"></i>
                 <h3 class="text-xl font-bold mb-4">SaaS Implementation</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">We help you select and integrate the best-in-class software tools like CRMs, ERPs, and marketing automation to streamline your workflow.</p>
+                <p class="text-slate-500">Waxaan kugu xireynaa shirkadaha software-ka ee ugu sareeya aduunka.</p>
             </div>
-            <div class="p-8 rounded-3xl border border-slate-100 bg-white hover:border-azure/30 hover:shadow-2xl transition group">
-                <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-azure group-hover:text-white transition">
-                    <i class="fa-solid fa-bezier-curve text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-4">Branding & Identity</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Leveraging our graphic design expertise to build powerful visual identities that resonate with your target market.</p>
+            <div class="p-10 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition">
+                <i class="fa-solid fa-chart-line text-4xl text-blue-600 mb-6"></i>
+                <h3 class="text-xl font-bold mb-4">Digital Strategy</h3>
+                <p class="text-slate-500">Kordhi dakhligaaga adoo isticmaalaya xeelado dhijitaal ah oo casri ah.</p>
             </div>
-            <div class="p-8 rounded-3xl border border-slate-100 bg-white hover:border-azure/30 hover:shadow-2xl transition group">
-                <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-azure group-hover:text-white transition">
-                    <i class="fa-solid fa-shield-check text-2xl text-azure group-hover:text-white transition"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-4">Business Consultancy</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Strategic advice on business administration and digital transformation to keep you ahead of the competition.</p>
+            <div class="p-10 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition">
+                <i class="fa-solid fa-shield-halved text-4xl text-blue-600 mb-6"></i>
+                <h3 class="text-xl font-bold mb-4">Security Consulting</h3>
+                <p class="text-slate-500">Nidaamkaaga iyo xogtaada ayaan ka dhigeynaa mid aan la jabin karin.</p>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-20 px-6 max-w-5xl mx-auto mb-20">
-        <div class="bg-azure rounded-[3rem] p-12 text-center text-white relative overflow-hidden shadow-2xl shadow-blue-500/40">
-            <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to transform?</h2>
-            <p class="text-blue-100 mb-10 max-w-xl mx-auto">Join dozens of businesses scaling with AZAL Solutions. Let's discuss your next project.</p>
-            <a href="mailto:mohamedgedi24@gmail.com" class="bg-navy text-white px-12 py-4 rounded-2xl font-bold hover:scale-105 transition inline-block">Work With Us</a>
+    <!-- Modals (Sign In / Sign Up) -->
+    <div id="modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm px-4">
+        <div class="bg-white w-full max-w-md p-8 rounded-3xl relative shadow-2xl">
+            <button onclick="toggleModal()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-xl"></i></button>
+            <div id="modal-content">
+                <!-- Content gets injected here -->
+            </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer class="bg-white border-t border-slate-100 py-12 px-6">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="text-xl font-bold tracking-tighter text-navy">
-                AZAL<span class="text-azure">SOLUTIONS</span>
-            </div>
-            <div class="flex space-x-6 text-slate-400 text-sm">
-                <a href="#" class="hover:text-azure">Privacy Policy</a>
-                <a href="#" class="hover:text-azure">Terms of Service</a>
-                <a href="#" class="hover:text-azure">Cookie Policy</a>
-            </div>
-            <div class="text-slate-400 text-sm italic">
-                &copy; 2026 AZAL Solutions. Built for Excellence.
-            </div>
-        </div>
-    </footer>
+    <script>
+        function toggleModal(type) {
+            const modal = document.getElementById('modal');
+            const content = document.getElementById('modal-content');
+            
+            if (!type) {
+                modal.classList.add('hidden');
+                return;
+            }
+
+            if (type === 'login') {
+                content.innerHTML = `
+                    <h2 class="text-2xl font-bold mb-6">Sign In</h2>
+                    <input type="email" placeholder="Email Address" class="w-full p-4 mb-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
+                    <input type="password" placeholder="Password" class="w-full p-4 mb-6 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
+                    <button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition">Guji si aad u gasho</button>
+                `;
+            } else {
+                content.innerHTML = `
+                    <h2 class="text-2xl font-bold mb-6">Create Account</h2>
+                    <input type="text" placeholder="Full Name" class="w-full p-4 mb-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
+                    <input type="email" placeholder="Email Address" class="w-full p-4 mb-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
+                    <input type="password" placeholder="Password" class="w-full p-4 mb-6 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
+                    <button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition">Diiwaangeli</button>
+                `;
+            }
+            modal.classList.remove('hidden');
+        }
+    </script>
 
 </body>
 </html>
-
